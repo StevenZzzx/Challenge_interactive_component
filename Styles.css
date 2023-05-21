@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+html{
+    height: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #161a20;
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.target-container, .thankyou-state{
+    background: radial-gradient(at 50% -100px,#2d3038,#1F2630,#171E27);
+    width: 330px;
+    height: 364px;
+    border-radius: 16px;
+    margin: 195px auto 80px;
+    padding: 24px;
+    box-shadow: #171E27;
+}
+
+.star-border{
+    background-color: #262F38;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    margin-bottom: 22px;
+}
+
+.text-container_title, .thankyou-state_title{
+    color: white;
+    margin-bottom: 22px;
+    font-size: 1.6em;
+}
+
+.text-container_paragraph, .thankyou-state_paragraph{
+    color: #7c7c7c;
+    line-height: 22px;
+    margin-bottom: 30px;
+    letter-spacing: -0.5px;
+}
+
+.ratings-container{
+    display:flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.ratings-container_button{
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+    
+    border-radius: 50%;
+    border: none;
+    
+    background-color: #262F38;
+    color: #707982;
+    
+    cursor: pointer;
+    
+    transition: 0.3s;
+}
+
+.ratings-container_button:hover{
+    background-color: #FD7514;
+    color: white;
+    transition: 0.4s;
+}
+
+.ratings-container_button:focus{
+    background-color: #707982;
+    color: white;
+}
+
+.btnSubmit-container{
+    display:grid;
+    place-items: center;
+}
+
+.btnSubmit-container_btn{
+    width: 100%;
+    height: 44px;
+    
+    border-radius: 50px;
+    border: none;
+    background-color: #FD7514;
+    color: white;
+    
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btnSubmit-container_btn:hover{  
+    background-color: white;
+    color: #FD7514;
+
+    transition: 0.4s;
+}
+
+/*---------Thanyou-State----------*/
+
+.thankyou-state{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thankyou-state_image{
+    width: 150px;
+    margin-bottom: 24px;
+}
+
+.thankyou-state_result{
+    background-color: #262F38;
+    width: 170px;
+    height: 36px;
+    border-radius: 50px;
+    color: #FD7514;
+    text-align: center;
+    padding: 8px 0px;
+    margin-bottom: 30px;
+    font-size: 0.9em;
+}
+
+.thankyou-state_paragraph{
+    text-align: center;
+}
+
+.attribution{
+    text-align: center;
+    color: #707982;
+    margin-top: auto;
+    padding: 35px;
+}
+
+.link-attribution{
+    text-decoration: none;
+    color: #db7a34;
+}
+
+.link-attribution_cv{
+    color: #db7a34;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.link-attribution:hover,.link-attribution_cv:hover{
+    color: #fff0dce0;
+    text-decoration:underline;
+}
+
+/*--------desktop----------*/
+
+@media(min-width: 600px){
+    .target-container, .thankyou-state{
+        width: 412px;
+        height: 412px;
+        padding: 34px;
+    }
+
+    .star-border, .ratings-container_button{
+        width: 50px;
+        height: 50px;
+    }
+
+}
